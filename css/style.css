@@ -23,6 +23,7 @@ p {
 .title{
 	color: white;
 	font-size: 30px;
+	text-shadow: 7px 5px 5px grey;
 }
 #quote{
 	font-style: italic;
