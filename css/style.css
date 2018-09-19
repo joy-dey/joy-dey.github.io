@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+/*class is reffered by . and id is reffered by #*/
+#header{
+	height: 250px;
+/*	background-image: url("../images/cover.jpeg");
+	background-size: cover;*/
+}
+p {
+	padding: 20px;
+}
+#header img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	align-content: center;
+}
+.img-circle{
+	border: 3px solid white;
+	border-radius: 50%; 
+}
+.title{
+	color: white;
+	font-size: 30px;
+}
+#quote{
+	font-style: italic;
+}
+p {
+	color: beige;
+}
+h1 {
+	color: snow;
+}
+#contact{
+	text-align: center;
+}
+#contact img{
+	height: 25px;
+	width: 25px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.copyright{
+	color: white;
+	font-size: xx-small;
+	text-align: right;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+textarea{
+	height: 100px;
+}
+form{
+	color: white;
+	text-align: center;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("https://desktopwalls.net/wp-content/uploads/2015/09/Camp%20Fire%20Near%20Lake%204K%20Ultra%20HD%20Desktop%20Wallpaper.jpg");
+}
