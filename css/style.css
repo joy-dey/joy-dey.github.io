@@ -1,29 +1,38 @@
 @charset "utf-8";
 /* CSS Document */
 /*class is reffered by . and id is reffered by #*/
-#header{
-	height: 250px;
-/*	background-image: url("../images/cover.jpeg");
-	background-size: cover;*/
-}
+
 p {
 	padding: 20px;
 }
-#header img{
-	display: block;
-	width: 80px;
-	height: 80px;
-	margin: auto;
-	align-content: center;
+.logo img{
+	float: left;
+	width:  50px;
+	height: auto;
+	margin-top: 10px;
 }
-.img-circle{
-	border: 3px solid white;
-	border-radius: 50%; 
+.topnav{
+	overflow: hidden;
+}
+.topnav a{
+	float: right;
+	text-align: center;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover{
+	background-color: white;
+	color: black;
 }
 .title{
 	color: white;
 	font-size: 30px;
-	text-shadow: 5px 2px 4px grey;
+}
+#info{
+	margin: 50px;
+	font-family: 'Charmonman', cursive;
 }
 #quote{
 	font-style: italic;
@@ -36,12 +45,16 @@ h1 {
 }
 #contact{
 	text-align: center;
+	text-decoration: none;
 }
 #contact img{
 	height: 25px;
 	width: 25px;
 	margin-left: 7px;
 	margin-right: 7px;
+}
+#contact a{
+	text-decoration: none;
 }
 .copyright{
 	color: white;
@@ -56,17 +69,21 @@ table{
 }
 table td{
 	border: 1px dotted white;
-}.selected{
+}
+.selected{
 	background-color: magenta;
 }
-ul {
-	color: grey;
+#schedule{
+	font-family: 'Charmonman', cursive;
+}
+ol {
+	color: white;
 	text-align: center;
 	list-style: none;
 }
 div, iframe{
 	display: block;
-	margin: 0 auto;
+	margin: 5px auto;
 }
 textarea{
 	height: 100px;
@@ -76,7 +93,88 @@ form{
 	text-align: center;
 }
 body {
-	width: 100%;
-	height: 100%;
-	background-image: url("https://desktopwalls.net/wp-content/uploads/2015/09/Camp%20Fire%20Near%20Lake%204K%20Ultra%20HD%20Desktop%20Wallpaper.jpg");
+	font-family: 'Charmonman', cursive;
+	background: linear-gradient(#EE4540, #C72C41, #801336, #510A32, #2D142C); 
 }
+/*
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 5px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: .6s ease;
+}
+ul li a:hover{
+	background-color: white;
+	color: #000;
+}
+*/
+
+progress{
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	width: 40%;
+	height: 20px;
+}
+progress::-webkit-progress-bar {
+	background-color: crimson;
+	border-radius: 5px;
+}
+progress[value]::-webkit-progress-value{
+	background-color: white;
+	border-radius: 5px;
+}
+
+header{
+	height: 20px;
+	width: 100%;
+}
+footer{
+	width: 100%;
+	padding: 60px 0px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+@keyframes spin {
+  from{
+    transform: rotateY(0deg);
+    moz-transform: rotateY(0deg);
+    ms-transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+    moz-transform: rotateY(360deg); 
+    ms-transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spin{
+  from{-webkit-transform: rotateY(0deg);}
+  to{-webkit-transform: rotateY(360deg);}
+}
+.imageSpin{
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+}
+font-family: 'Unlock', cursive;
+font-family: 'Black And White Picture', sans-serif;
+font-family: 'Gamja Flower', cursive;
+font-family: 'Charmonman', cursive;
+font-family: 'Lobster', cursive;
