@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body, html{
+	height: 100%;
+	margin: 0;
+}
+.bg{
+	background-image: url(../images/19-58-52-under_maintenance_page.png);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
