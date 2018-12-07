@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'ComicSansBold';
+	src: url(../fonts/ComicSansBold.ttf);
+}
+body {
+	background-image: linear-gradient(to left, #cc2b5e, #753a88);
+	font-family: 'ComicSansBold';
+}
+
+
