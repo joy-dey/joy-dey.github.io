@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css\style.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|Charmonman|Gamja+Flower|Lobster|Unlock');
+</style>
+<title>Joy Dey</title>
+<link rel="icon" type="image/ico" href="images/title-logo.png"/>
+</head>
+<body>
+<header>
+<div class="main">
+<div class="logo">
+	<img src="images/jdlogo1.png" class="imageSpin"/>
+</div>
+<div id="countdown">
+  <div id='tiles'></div>
+  <div class="labels">
+    <li>Days</li>
+    <li>Hours</li>
+    <li>Mins</li>
+    <li>Secs</li>
+  </div>
+</div>
+<h1 style="text-align: center; margin-top: 50px;">Something Awesome coming in</h1>
+
+<script>
+var target_date = new Date().getTime() + (100000*3600*48); // set the countdown date
+var days, hours, minutes, seconds; // variables for time units
+
+var countdown = document.getElementById("tiles"); // get tag element
+
+getCountdown();
+
+setInterval(function () { getCountdown(); }, 1000);
+
+function getCountdown(){
+
+	// find the amount of "seconds" between now and target
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+
+	days = pad( parseInt(seconds_left / 86400) );
+	seconds_left = seconds_left % 86400;
+		 
+	hours = pad( parseInt(seconds_left / 3600) );
+	seconds_left = seconds_left % 3600;
+		  
+	minutes = pad( parseInt(seconds_left / 60) );
+	seconds = pad( parseInt( seconds_left % 60 ) );
+
+	// format countdown string + set tag value
+	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+}
+
+function pad(n) {
+	return (n < 10 ? '0' : '') + n;
+}
+
+</script>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c0acf6b7a79fc1bddeffca2/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
