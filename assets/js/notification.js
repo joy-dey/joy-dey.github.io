@@ -1,19 +1,4 @@
 (() => {
-
-    const template = `
-        <div class="card">
-            <div class="card-body">
-                <div class="image-holder">
-                    <img src="undraw_Playful_cat_re_bxiu.svg" alt="">
-                </div>
-                <h4 class="card-title">A New Website is on the Way!</h4>
-                <p class="card-text">
-                    My work has changed since the site was created almost 2 years ago. I have learnt a lot of new stuff in this timespan and currently working on the site to better reflect my life, current works and ambitions
-                </p>
-            </div>
-        </div>
-    `;
-
     const parentElem = document.body,
         card = document.createElement('div'),
         cardBody = document.createElement('div'),
@@ -31,7 +16,8 @@
         "position": "fixed",
         "bottom": "20px",
         "right": "20px",
-        "z-index": "99999"
+        "z-index": "99999",
+        "background-color": "#ffffff";
     }
 
     const imageHolderStyle = {
@@ -45,7 +31,8 @@
 
     const cardTitleStyle = {
         "margin-bottom": 0,
-        "color": "#6C63FF"
+        "color": "#6C63FF",
+        "text-transform": "capitalize !important"
     }
     const cardTextStyle = {
         "font-size": "11px",
