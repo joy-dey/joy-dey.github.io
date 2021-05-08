@@ -17,7 +17,7 @@
         "bottom": "20px",
         "right": "20px",
         "z-index": "99999",
-        "background-color": "#ffffff";
+        "background-color": "#ffffff"
     }
 
     const imageHolderStyle = {
