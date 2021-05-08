@@ -30,6 +30,8 @@
     }
 
     const cardTitleStyle = {
+        "margin-top": "1.33rem",
+        "font-size": "16px",
         "margin-bottom": 0,
         "color": "#6C63FF",
         "text-transform": "capitalize !important"
