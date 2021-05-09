@@ -34,11 +34,13 @@
         "font-size": "16px",
         "margin-bottom": 0,
         "color": "#6C63FF",
-        "text-transform": "capitalize !important"
+        "text-transform": "capitalize !important",
+        "letter-spacing": "initial"
     }
     const cardTextStyle = {
         "font-size": "11px",
-        "color": "#716E6E"
+        "color": "#716E6E",
+        "margin-top": "1rem"
     }
 
     const cardImageStyle = {
