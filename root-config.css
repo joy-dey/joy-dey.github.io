@@ -1,0 +1,47 @@
+:root {
+    --color-main: #FF0066;
+    --color-light: #FFFFFF;
+    --landing-background-color: #030303;
+    --no-color: transparent;
+    // viewpoet size
+    --clamp-viewport-size: 6vw;
+    // font family
+    --base-font: "Poppins", sans-serif;
+    --base-font-size: 1rem;
+    // font sizes 
+    --base-font-weight: 400;
+    --landing-heading-font-size: 5.625rem;
+    --landing-heading-font-min-size: 3.75rem;
+    --landing-heading-font-weight: 800;
+    --landing-font-line-height: 1.3;
+    --landing-font-clamped: clamp(var(--landing-heading-font-min-size), var(--clamp-viewport-size), var(--landing-heading-font-size));
+    --section-heading-font-size: calc(60 / 16)rem;
+    --section-heading-font-weight: var(--landing-heading-font-weight);
+    // buttons
+    --button-text-weight: 700;
+    --button-padding-x: 2.5rem;
+    --button-padding-y: 1rem;
+    --button-border: 3px;
+    --button-border-style: solid;
+    --button-border-filled: transparent;
+    --button-border-outlined: var(--color-main);
+    --button-border-radius: 3px;
+    --button-outline: none;
+    --cursor-style-pointer: pointer;
+    --button-click-effect: translateY(4px);
+    // card
+    --card-border-radius: 2rem;
+    --relative-parent: relative;
+    --no-overflow: hidden;
+    --absolute-element: absolute;
+    --full-width: 100%;
+    --full-height: 100%;
+    --at-begining: 0;
+    --loyality: 1;
+    --center-element: center;
+    --flexible-element: flex;
+    --its-no-ones-marriage: none;
+    --whore-element: visible;
+    --flex-down: column;
+    --smooth-as-fuck: all .3s ease-in-out;
+}
