@@ -62,7 +62,7 @@
     cardImage.setAttribute("src", "assets/img/undraw_Playful_cat_re_bxiu.svg");
     cardBody.appendChild(cardTitle);
 
-    cardTitle.innerText = "A New Website is on the Way!";
+    cardTitle.innerText = "A New Website is on the Way! (Might take a lot of time)";
     cardBody.appendChild(cardText);
     cardText.innerText = `My work has changed since the site was created almost ${new Date().getFullYear() - 2019} years ago. I have learnt a lot of new stuff in this timespan and currently working on the site to better reflect my life, current works and ambitions`
 
